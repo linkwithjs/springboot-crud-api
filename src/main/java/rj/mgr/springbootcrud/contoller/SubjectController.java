@@ -34,6 +34,11 @@ public class SubjectController {
         subjectService.deleteSubject(id);
     }
 
+    @RequestMapping(method= RequestMethod.GET, value=".subject/{id}")
+    public void getSingleSubject(@PathVariable String id, @RequestBody Subject subject){
+        subjectService.getSingleSubject(id);
+    }
+
 }
 
 

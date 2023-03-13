@@ -30,5 +30,9 @@ public class SubjectService {
         SubjectRepo.deleteById(id);
    }
 
+   public void getSingleSubject(String id){
+    SubjectRepo.findById(id);
+   }
+
 
 }
